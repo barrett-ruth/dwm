@@ -58,6 +58,9 @@ static Key keys[] = {
 
     {0, XF86XK_MonBrightnessUp, spawn, SHCMD("brightnessctl set 10%+")},
     {0, XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl set 10%-")},
+    {0, XF86XK_AudioRaiseVolume, spawn, SHCMD("vol up")},
+    {0, XF86XK_AudioLowerVolume, spawn, SHCMD("vol down")},
+    {0, XF86XK_AudioMute, spawn, SHCMD("vol mute")},
 
     {SCRIPT, XK_c, spawn, SHCMD("clipmenu")},
     {SCRIPT, XK_k, spawn, SHCMD("skb toggle")},
@@ -84,11 +87,6 @@ static Key keys[] = {
     {MODKEYS, XK_period, tagmon, {.i = +1}},
     {MODKEYC, XK_comma, tagfocusmon, {.i = -1}},
     {MODKEYC, XK_period, tagfocusmon, {.i = +1}},
-
-    {SCRIPT, XK_u, spawn, SHCMD("vol up")},
-    {SCRIPT, XK_d, spawn, SHCMD("vol down")},
-    {SCRIPT, XK_m, spawn, SHCMD("vol mute")},
-    {SCRIPT, XK_t, spawn, SHCMD("vol toggle")},
 
     {MODKEY, XK_q, killclient, {0}},
     {MODKEYS, XK_q, quit, {0}},
