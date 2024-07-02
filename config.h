@@ -56,6 +56,9 @@ static Key keys[] = {
     {MODKEY, XK_space, spawn, SHCMD("dmenu_run")},
     {MODKEY, XK_Return, spawn, SHCMD("st")},
 
+    {0, XF86XK_MonBrightnessUp, spawn, SHCMD("brightnessctl set 10%+")},
+    {0, XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl set 10%-")},
+
     {SCRIPT, XK_c, spawn, SHCMD("clipmenu")},
     {SCRIPT, XK_k, spawn, SHCMD("skb toggle")},
     {SCRIPT, XK_r, spawn, SHCMD("rbt")},
