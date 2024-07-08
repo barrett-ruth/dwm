@@ -64,11 +64,11 @@ static Key keys[] = {
     {0, XF86XK_AudioLowerVolume, spawn, SHCMD("vol down")},
     {0, XF86XK_AudioMute, spawn, SHCMD("vol mute")},
 
+    {SCRIPT, XK_a, spawn, SHCMD("set-speaker")},
     {SCRIPT, XK_c, spawn, SHCMD("clipmenu")},
     {SCRIPT, XK_k, spawn, SHCMD("skb toggle")},
     {SCRIPT, XK_r, spawn, SHCMD("rbt")},
     {SCRIPT, XK_s, spawn, SHCMD("sss")},
-    {SCRIPT, XK_w, spawn, SHCMD("doas systemctl restart iwd")},
     {SCRIPT, XK_m, spawn, SHCMD("smon; sbg")},
 
     {MODKEY, XK_a, focusstack, {.i = -1}},
