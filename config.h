@@ -69,7 +69,7 @@ static Key keys[] = {
     {SCRIPT, XK_r, spawn, SHCMD("rbt")},
     {SCRIPT, XK_s, spawn, SHCMD("sss")},
     {SCRIPT, XK_w, spawn, SHCMD("doas systemctl restart iwd")},
-    {SCRIPT, XK_x, spawn, SHCMD("smon; sbg")},
+    {SCRIPT, XK_m, spawn, SHCMD("smon; sbg")},
 
     {MODKEY, XK_a, focusstack, {.i = -1}},
     {MODKEY, XK_f, focusstack, {.i = +1}},
