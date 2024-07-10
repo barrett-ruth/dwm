@@ -67,9 +67,10 @@ static Key keys[] = {
     {SCRIPT, XK_a, spawn, SHCMD("set-speaker")},
     {SCRIPT, XK_c, spawn, SHCMD("clipmenu")},
     {SCRIPT, XK_k, spawn, SHCMD("skb toggle")},
+    {SCRIPT, XK_m, spawn, SHCMD("smon; sbg")},
     {SCRIPT, XK_r, spawn, SHCMD("rbt")},
     {SCRIPT, XK_s, spawn, SHCMD("sss")},
-    {SCRIPT, XK_m, spawn, SHCMD("smon; sbg")},
+    {SCRIPT, XK_t, spawn, SHCMD("img2txt")},
 
     {MODKEY, XK_a, focusstack, {.i = -1}},
     {MODKEY, XK_f, focusstack, {.i = +1}},
