@@ -23,6 +23,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Chromium", NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "discord",  NULL,       NULL,       1 << 2,       0,           -1 },
 	{ "st",       NULL,       NULL,       1 << 0,       0,           -1 },
 };
 
