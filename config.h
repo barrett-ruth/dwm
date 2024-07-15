@@ -16,6 +16,17 @@ static const char *colors[][3] = {
 /* tagging */
 static const char *tags[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
 
+static const Rule rules[] = {
+	/* xprop(1):
+	 *	WM_CLASS(STRING) = instance, class
+	 *	WM_NAME(STRING) = title
+	 */
+	/* class      instance    title       tags mask     isfloating   monitor */
+	{ "Chromium", NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "st",       NULL,       NULL,       1 << 0,       0,           -1 },
+};
+
+
 /* layout(s) */
 static const float mfact = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster = 1;   /* number of clients in master area */
@@ -53,7 +64,7 @@ static Key keys[] = {
     /* modifier                     key        function        argument */
     {MODKEY, XK_b, togglebar, {0}},
     {MODKEY, XK_c, spawn, SHCMD("chromium")},
-    {MODKEY, XK_d, spawn, SHCMD("discord")},
+    {MODKEYS, XK_c, spawn, SHCMD("chromium --high-dpi-support=1 --force-device-scale-factor=1.5")},
     {MODKEY, XK_t, spawn, SHCMD("tws")},
     {MODKEY, XK_space, spawn, SHCMD("dmenu_run")},
     {MODKEY, XK_Return, spawn, SHCMD("st")},
