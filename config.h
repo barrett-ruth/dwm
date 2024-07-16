@@ -75,6 +75,7 @@ static Key keys[] = {
     {0, XF86XK_AudioRaiseVolume, spawn, SHCMD("vol up")},
     {0, XF86XK_AudioLowerVolume, spawn, SHCMD("vol down")},
     {0, XF86XK_AudioMute, spawn, SHCMD("vol mute")},
+    {0, XF86XK_Messenger, spawn, SHCMD("cycle-brightness")},
 
     {SCRIPT, XK_a, spawn, SHCMD("set-speaker")},
     {SCRIPT, XK_c, spawn, SHCMD("clipmenu")},
