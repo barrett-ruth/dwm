@@ -77,6 +77,7 @@ static Key keys[] = {
 
     {SCRIPT, XK_a, spawn, SHCMD("set-speaker")},
     {SCRIPT, XK_c, spawn, SHCMD("clipmenu")},
+    {SCRIPT, XK_d, spawn, SHCMD("doc")},
     {SCRIPT, XK_k, spawn, SHCMD("skb toggle")},
     {SCRIPT, XK_m, spawn, SHCMD("smon; sbg")},
     {SCRIPT, XK_r, spawn, SHCMD("rbt")},
