@@ -24,6 +24,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "discord",  NULL,       NULL,       1 << 2,       0,           -1 },
 	{ "sioyek",   NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "zoom",     NULL,       NULL,       1 << 4,       0,           -1 },
 };
 
 
@@ -63,7 +64,9 @@ static const Layout layouts[] = {
 static Key keys[] = {
     {MODKEYS, XK_b, toggleborders, {0}},
     {MODKEYS, XK_c, spawn, SHCMD("chromium")},
+    {MODKEYS, XK_d, spawn, SHCMD("discord")},
     {MODKEYS, XK_t, spawn, SHCMD("tws")},
+    {MODKEYS, XK_z, spawn, SHCMD("zoom")},
     {MODKEYS, XK_Return, spawn, SHCMD("st")},
     {MODKEY, XK_space, spawn, SHCMD("dmenu_run")},
 
